@@ -3,6 +3,8 @@
 //    return `Hello ${name}`;
 // }
 
+import { runInThisContext } from "vm";
+
 // console.log(greeting("Kennie"));
 
 
@@ -39,6 +41,22 @@
 
 const age = 23;
 console.log(age+3);
+
+ class Staff {
+    // id:number = 30;
+    // name:string = 'Lawal' ;
+    
+
+    employee = (id:number, name:string): any => {
+       return `${id} : ${name}`
+    }
+ }
+
+const newEmployee = new Staff();
+
+
+console.log(newEmployee.employee(17, 'Lawal'));
+
 
     
 // if (age > 20) console.log("Adult");
